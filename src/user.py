@@ -96,7 +96,7 @@ class BiliUser:
         [
             self.medalsNeedDo.append(medal)
             for medal in self.medals
-            if medal['medal']['level'] < 20 and medal['medal']['today_feed'] < 1500
+            if medal['medal']['level'] < 120 and medal['medal']['today_feed'] < 30
         ]
 
     async def like_v3(self, failedMedals: list = []):
